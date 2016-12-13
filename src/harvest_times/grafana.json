@@ -8,7 +8,7 @@
   "sharedCrosshair": false,
   "hideControls": false,
   "time": {
-    "from": "now-6M",
+    "from": "now-60d",
     "to": "now"
   },
   "timepicker": {
@@ -65,159 +65,159 @@
         "name": "project",
         "options": [
           {
+            "selected": true,
             "text": "All",
-            "value": "$__all",
-            "selected": true
+            "value": "$__all"
           },
           {
+            "selected": false,
             "text": "akvopedia",
-            "value": "akvopedia",
-            "selected": false
+            "value": "akvopedia"
           },
           {
+            "selected": false,
             "text": "ashoka-survey",
-            "value": "ashoka-survey",
-            "selected": false
+            "value": "ashoka-survey"
           },
           {
+            "selected": false,
             "text": "athena",
-            "value": "athena",
-            "selected": false
+            "value": "athena"
           },
           {
+            "selected": false,
             "text": "carbon",
-            "value": "carbon",
-            "selected": false
+            "value": "carbon"
           },
           {
+            "selected": false,
             "text": "collectd",
-            "value": "collectd",
-            "selected": false
+            "value": "collectd"
           },
           {
+            "selected": false,
             "text": "community",
-            "value": "community",
-            "selected": false
+            "value": "community"
           },
           {
+            "selected": false,
             "text": "delhi-schools",
-            "value": "delhi-schools",
-            "selected": false
+            "value": "delhi-schools"
           },
           {
+            "selected": false,
             "text": "design-practice",
-            "value": "design-practice",
-            "selected": false
+            "value": "design-practice"
           },
           {
+            "selected": false,
             "text": "devois",
-            "value": "devois",
-            "selected": false
+            "value": "devois"
           },
           {
+            "selected": false,
             "text": "evaluation",
-            "value": "evaluation",
-            "selected": false
+            "value": "evaluation"
           },
           {
+            "selected": false,
             "text": "foo",
-            "value": "foo",
-            "selected": false
+            "value": "foo"
           },
           {
+            "selected": false,
             "text": "go-jek",
-            "value": "go-jek",
-            "selected": false
+            "value": "go-jek"
           },
           {
+            "selected": false,
             "text": "grasshopper",
-            "value": "grasshopper",
-            "selected": false
+            "value": "grasshopper"
           },
           {
+            "selected": false,
             "text": "insider",
-            "value": "insider",
-            "selected": false
+            "value": "insider"
           },
           {
+            "selected": false,
             "text": "irewardchart",
-            "value": "irewardchart",
-            "selected": false
+            "value": "irewardchart"
           },
           {
+            "selected": false,
             "text": "kulu",
-            "value": "kulu",
-            "selected": false
+            "value": "kulu"
           },
           {
+            "selected": false,
             "text": "learning",
-            "value": "learning",
-            "selected": false
+            "value": "learning"
           },
           {
+            "selected": false,
             "text": "mightyhive",
-            "value": "mightyhive",
-            "selected": false
+            "value": "mightyhive"
           },
           {
+            "selected": false,
             "text": "mindspark",
-            "value": "mindspark",
-            "selected": false
+            "value": "mindspark"
           },
           {
+            "selected": false,
             "text": "neev-technologies---dmart",
-            "value": "neev-technologies---dmart",
-            "selected": false
+            "value": "neev-technologies---dmart"
           },
           {
+            "selected": false,
             "text": "operations",
-            "value": "operations",
-            "selected": false
+            "value": "operations"
           },
           {
+            "selected": false,
             "text": "pantheon",
-            "value": "pantheon",
-            "selected": false
+            "value": "pantheon"
           },
           {
+            "selected": false,
             "text": "perfect",
-            "value": "perfect",
-            "selected": false
+            "value": "perfect"
           },
           {
+            "selected": false,
             "text": "postgresql-consulting",
-            "value": "postgresql-consulting",
-            "selected": false
+            "value": "postgresql-consulting"
           },
           {
+            "selected": false,
             "text": "quintype",
-            "value": "quintype",
-            "selected": false
+            "value": "quintype"
           },
           {
+            "selected": false,
             "text": "ripple",
-            "value": "ripple",
-            "selected": false
+            "value": "ripple"
           },
           {
+            "selected": false,
             "text": "samanvay",
-            "value": "samanvay",
-            "selected": false
+            "value": "samanvay"
           },
           {
+            "selected": false,
             "text": "school-scoop",
-            "value": "school-scoop",
-            "selected": false
+            "value": "school-scoop"
           },
           {
+            "selected": false,
             "text": "social-recommendation-service",
-            "value": "social-recommendation-service",
-            "selected": false
+            "value": "social-recommendation-service"
           },
           {
+            "selected": false,
             "text": "subcontracting",
-            "value": "subcontracting",
-            "selected": false
+            "value": "subcontracting"
           }
         ],
         "query": "*",
@@ -235,7 +235,7 @@
   },
   "refresh": false,
   "schemaVersion": 13,
-  "version": 18,
+  "version": 26,
   "links": [],
   "gnetId": null,
   "rows": [
@@ -246,6 +246,7 @@
           "aliasColors": {},
           "bars": true,
           "datasource": null,
+          "decimals": 1,
           "editable": true,
           "error": false,
           "fill": 10,
@@ -254,21 +255,23 @@
           "legend": {
             "alignAsTable": true,
             "avg": true,
+            "hideEmpty": true,
+            "hideZero": true,
             "max": false,
             "min": false,
             "rightSide": true,
             "show": true,
-            "total": true,
-            "values": true,
-            "sortDesc": true,
-            "sort": "total",
             "sideWidth": 250,
-            "hideEmpty": true,
-            "hideZero": true
+            "sort": "total",
+            "sortDesc": true,
+            "total": true,
+            "values": true
           },
           "lines": false,
           "linewidth": 2,
           "links": [],
+          "maxDataPoints": "80",
+          "minSpan": 12,
           "nullPointMode": "null",
           "percentage": false,
           "pointradius": 2,
@@ -326,9 +329,7 @@
               "min": null,
               "show": false
             }
-          ],
-          "minSpan": 12,
-          "maxDataPoints": "100"
+          ]
         }
       ],
       "showTitle": false,
@@ -340,7 +341,7 @@
       "collapse": false
     },
     {
-      "title": "Dashboard Row",
+      "title": "Hour Aggregates",
       "panels": [
         {
           "cacheTimeout": null,
@@ -352,13 +353,14 @@
             "rgba(50, 172, 45, 0.97)"
           ],
           "datasource": null,
+          "decimals": 2,
           "editable": true,
           "error": false,
           "format": "none",
           "gauge": {
-            "maxValue": 100,
+            "maxValue": 40,
             "minValue": 0,
-            "show": false,
+            "show": true,
             "thresholdLabels": false,
             "thresholdMarkers": true
           },
@@ -377,6 +379,7 @@
             }
           ],
           "maxDataPoints": "",
+          "minSpan": 2,
           "nullPointMode": "connected",
           "nullText": null,
           "postfix": "",
@@ -390,7 +393,7 @@
               "to": "null"
             }
           ],
-          "span": 3,
+          "span": 2,
           "sparkline": {
             "fillColor": "rgba(31, 118, 189, 0.18)",
             "full": false,
@@ -407,7 +410,7 @@
           "thresholds": "",
           "timeFrom": "1w",
           "timeShift": null,
-          "title": "Total last week",
+          "title": "",
           "type": "singlestat",
           "valueFontSize": "80%",
           "valueMaps": [
@@ -417,8 +420,7 @@
               "value": "null"
             }
           ],
-          "valueName": "total",
-          "decimals": 2
+          "valueName": "total"
         },
         {
           "cacheTimeout": null,
@@ -430,13 +432,14 @@
             "rgba(50, 172, 45, 0.97)"
           ],
           "datasource": null,
+          "decimals": 2,
           "editable": true,
           "error": false,
           "format": "none",
           "gauge": {
-            "maxValue": 100,
+            "maxValue": 160,
             "minValue": 0,
-            "show": false,
+            "show": true,
             "thresholdLabels": false,
             "thresholdMarkers": true
           },
@@ -458,9 +461,9 @@
           "nullPointMode": "connected",
           "nullText": null,
           "postfix": "",
-          "postfixFontSize": "50%",
+          "postfixFontSize": "30%",
           "prefix": "",
-          "prefixFontSize": "50%",
+          "prefixFontSize": "30%",
           "rangeMaps": [
             {
               "from": "null",
@@ -468,7 +471,7 @@
               "to": "null"
             }
           ],
-          "span": 3,
+          "span": 2,
           "sparkline": {
             "fillColor": "rgba(31, 118, 189, 0.18)",
             "full": false,
@@ -485,7 +488,7 @@
           "thresholds": "",
           "timeFrom": "1M",
           "timeShift": null,
-          "title": "Total last month",
+          "title": "",
           "type": "singlestat",
           "valueFontSize": "80%",
           "valueMaps": [
@@ -495,8 +498,7 @@
               "value": "null"
             }
           ],
-          "valueName": "total",
-          "decimals": 2
+          "valueName": "total"
         },
         {
           "cacheTimeout": null,
@@ -508,13 +510,14 @@
             "rgba(50, 172, 45, 0.97)"
           ],
           "datasource": null,
+          "decimals": 2,
           "editable": true,
           "error": false,
           "format": "none",
           "gauge": {
-            "maxValue": 100,
+            "maxValue": 480,
             "minValue": 0,
-            "show": false,
+            "show": true,
             "thresholdLabels": false,
             "thresholdMarkers": true
           },
@@ -546,7 +549,7 @@
               "to": "null"
             }
           ],
-          "span": 3,
+          "span": 2,
           "sparkline": {
             "fillColor": "rgba(31, 118, 189, 0.18)",
             "full": false,
@@ -563,7 +566,7 @@
           "thresholds": "",
           "timeFrom": "3M",
           "timeShift": null,
-          "title": "Total last 3 months",
+          "title": "",
           "type": "singlestat",
           "valueFontSize": "80%",
           "valueMaps": [
@@ -573,8 +576,7 @@
               "value": "null"
             }
           ],
-          "valueName": "total",
-          "decimals": 2
+          "valueName": "total"
         },
         {
           "cacheTimeout": null,
@@ -586,6 +588,85 @@
             "rgba(50, 172, 45, 0.97)"
           ],
           "datasource": null,
+          "decimals": 2,
+          "editable": true,
+          "error": false,
+          "format": "none",
+          "gauge": {
+            "maxValue": 960,
+            "minValue": 0,
+            "show": true,
+            "thresholdLabels": false,
+            "thresholdMarkers": true
+          },
+          "id": 14,
+          "interval": null,
+          "links": [],
+          "mappingType": 1,
+          "mappingTypes": [
+            {
+              "name": "value to text",
+              "value": 1
+            },
+            {
+              "name": "range to text",
+              "value": 2
+            }
+          ],
+          "maxDataPoints": "",
+          "nullPointMode": "connected",
+          "nullText": null,
+          "postfix": "",
+          "postfixFontSize": "50%",
+          "prefix": "",
+          "prefixFontSize": "50%",
+          "rangeMaps": [
+            {
+              "from": "null",
+              "text": "N/A",
+              "to": "null"
+            }
+          ],
+          "span": 2,
+          "sparkline": {
+            "fillColor": "rgba(31, 118, 189, 0.18)",
+            "full": false,
+            "lineColor": "rgb(31, 120, 193)",
+            "show": false
+          },
+          "targets": [
+            {
+              "refId": "A",
+              "target": "sumSeries($project.$person)",
+              "textEditor": false
+            }
+          ],
+          "thresholds": "",
+          "timeFrom": "6M",
+          "timeShift": null,
+          "title": "",
+          "type": "singlestat",
+          "valueFontSize": "80%",
+          "valueMaps": [
+            {
+              "op": "=",
+              "text": "N/A",
+              "value": "null"
+            }
+          ],
+          "valueName": "total"
+        },
+        {
+          "cacheTimeout": null,
+          "colorBackground": false,
+          "colorValue": false,
+          "colors": [
+            "rgba(245, 54, 54, 0.9)",
+            "rgba(237, 129, 40, 0.89)",
+            "rgba(50, 172, 45, 0.97)"
+          ],
+          "datasource": null,
+          "decimals": 2,
           "editable": true,
           "error": false,
           "format": "none",
@@ -624,12 +705,12 @@
               "to": "null"
             }
           ],
-          "span": 3,
+          "span": 4,
           "sparkline": {
             "fillColor": "rgba(31, 118, 189, 0.18)",
-            "full": false,
+            "full": true,
             "lineColor": "rgb(31, 120, 193)",
-            "show": false
+            "show": true
           },
           "targets": [
             {
@@ -651,20 +732,19 @@
               "value": "null"
             }
           ],
-          "valueName": "total",
-          "decimals": 2
+          "valueName": "total"
         }
       ],
-      "showTitle": false,
+      "showTitle": true,
       "titleSize": "h6",
-      "height": 101,
+      "height": 95,
       "repeat": null,
       "repeatRowId": null,
       "repeatIteration": null,
       "collapse": false
     },
     {
-      "title": "Dashboard Row",
+      "title": "Leaves",
       "panels": [
         {
           "cacheTimeout": null,
@@ -676,6 +756,7 @@
             "rgba(50, 172, 45, 0.97)"
           ],
           "datasource": null,
+          "decimals": 2,
           "editable": true,
           "error": false,
           "format": "none",
@@ -686,6 +767,7 @@
             "thresholdLabels": false,
             "thresholdMarkers": true
           },
+          "hideTimeOverride": false,
           "id": 9,
           "interval": null,
           "links": [],
@@ -714,7 +796,7 @@
               "to": "null"
             }
           ],
-          "span": 3,
+          "span": 2,
           "sparkline": {
             "fillColor": "rgba(31, 118, 189, 0.18)",
             "full": false,
@@ -731,7 +813,7 @@
           "thresholds": "",
           "timeFrom": "1w",
           "timeShift": null,
-          "title": "Leaves last week",
+          "title": "",
           "type": "singlestat",
           "valueFontSize": "80%",
           "valueMaps": [
@@ -741,9 +823,7 @@
               "value": "null"
             }
           ],
-          "valueName": "total",
-          "decimals": 2,
-          "hideTimeOverride": false
+          "valueName": "total"
         },
         {
           "cacheTimeout": null,
@@ -755,6 +835,7 @@
             "rgba(50, 172, 45, 0.97)"
           ],
           "datasource": null,
+          "decimals": 2,
           "editable": true,
           "error": false,
           "format": "none",
@@ -793,7 +874,7 @@
               "to": "null"
             }
           ],
-          "span": 3,
+          "span": 2,
           "sparkline": {
             "fillColor": "rgba(31, 118, 189, 0.18)",
             "full": false,
@@ -810,7 +891,7 @@
           "thresholds": "",
           "timeFrom": "1M",
           "timeShift": null,
-          "title": "Leaves last month",
+          "title": "",
           "type": "singlestat",
           "valueFontSize": "80%",
           "valueMaps": [
@@ -820,8 +901,7 @@
               "value": "null"
             }
           ],
-          "valueName": "total",
-          "decimals": 2
+          "valueName": "total"
         },
         {
           "cacheTimeout": null,
@@ -833,6 +913,7 @@
             "rgba(50, 172, 45, 0.97)"
           ],
           "datasource": null,
+          "decimals": 2,
           "editable": true,
           "error": false,
           "format": "none",
@@ -871,7 +952,7 @@
               "to": "null"
             }
           ],
-          "span": 3,
+          "span": 2,
           "sparkline": {
             "fillColor": "rgba(31, 118, 189, 0.18)",
             "full": false,
@@ -888,7 +969,7 @@
           "thresholds": "",
           "timeFrom": "3M",
           "timeShift": null,
-          "title": "Leaves last 3 months",
+          "title": "",
           "type": "singlestat",
           "valueFontSize": "80%",
           "valueMaps": [
@@ -898,8 +979,7 @@
               "value": "null"
             }
           ],
-          "valueName": "total",
-          "decimals": 2
+          "valueName": "total"
         },
         {
           "cacheTimeout": null,
@@ -911,6 +991,85 @@
             "rgba(50, 172, 45, 0.97)"
           ],
           "datasource": null,
+          "decimals": 2,
+          "editable": true,
+          "error": false,
+          "format": "none",
+          "gauge": {
+            "maxValue": 100,
+            "minValue": 0,
+            "show": false,
+            "thresholdLabels": false,
+            "thresholdMarkers": true
+          },
+          "id": 15,
+          "interval": null,
+          "links": [],
+          "mappingType": 1,
+          "mappingTypes": [
+            {
+              "name": "value to text",
+              "value": 1
+            },
+            {
+              "name": "range to text",
+              "value": 2
+            }
+          ],
+          "maxDataPoints": "",
+          "nullPointMode": "connected",
+          "nullText": null,
+          "postfix": "",
+          "postfixFontSize": "50%",
+          "prefix": "",
+          "prefixFontSize": "50%",
+          "rangeMaps": [
+            {
+              "from": "null",
+              "text": "N/A",
+              "to": "null"
+            }
+          ],
+          "span": 2,
+          "sparkline": {
+            "fillColor": "rgba(31, 118, 189, 0.18)",
+            "full": false,
+            "lineColor": "rgb(31, 120, 193)",
+            "show": false
+          },
+          "targets": [
+            {
+              "refId": "A",
+              "target": "scale(sumSeries(leaves.$person),0.125)",
+              "textEditor": true
+            }
+          ],
+          "thresholds": "",
+          "timeFrom": "6M",
+          "timeShift": null,
+          "title": "",
+          "type": "singlestat",
+          "valueFontSize": "80%",
+          "valueMaps": [
+            {
+              "op": "=",
+              "text": "N/A",
+              "value": "null"
+            }
+          ],
+          "valueName": "total"
+        },
+        {
+          "cacheTimeout": null,
+          "colorBackground": false,
+          "colorValue": false,
+          "colors": [
+            "rgba(245, 54, 54, 0.9)",
+            "rgba(237, 129, 40, 0.89)",
+            "rgba(50, 172, 45, 0.97)"
+          ],
+          "datasource": null,
+          "decimals": 2,
           "editable": true,
           "error": false,
           "format": "none",
@@ -949,12 +1108,12 @@
               "to": "null"
             }
           ],
-          "span": 3,
+          "span": 4,
           "sparkline": {
             "fillColor": "rgba(31, 118, 189, 0.18)",
-            "full": false,
+            "full": true,
             "lineColor": "rgb(31, 120, 193)",
-            "show": false
+            "show": true
           },
           "targets": [
             {
@@ -976,13 +1135,12 @@
               "value": "null"
             }
           ],
-          "valueName": "total",
-          "decimals": 2
+          "valueName": "total"
         }
       ],
-      "showTitle": false,
+      "showTitle": true,
       "titleSize": "h6",
-      "height": 103,
+      "height": 26,
       "repeat": null,
       "repeatRowId": null,
       "repeatIteration": null,
@@ -998,6 +1156,7 @@
           "editable": true,
           "error": false,
           "fill": 2,
+          "height": "",
           "hideTimeOverride": false,
           "id": 11,
           "legend": {
@@ -1007,14 +1166,15 @@
             "min": false,
             "rightSide": true,
             "show": true,
-            "total": true,
-            "values": true,
+            "sort": "total",
             "sortDesc": true,
-            "sort": "total"
+            "total": true,
+            "values": true
           },
           "lines": false,
           "linewidth": 4,
           "links": [],
+          "minSpan": 12,
           "nullPointMode": "null",
           "percentage": false,
           "pointradius": 5,
@@ -1072,9 +1232,7 @@
               "min": null,
               "show": false
             }
-          ],
-          "minSpan": 12,
-          "height": ""
+          ]
         }
       ],
       "showTitle": false,
