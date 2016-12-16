@@ -1,6 +1,6 @@
 {
   "id": 2,
-  "title": "Harvest",
+  "title": "Personal",
   "tags": [],
   "style": "dark",
   "timezone": "browser",
@@ -8,7 +8,7 @@
   "sharedCrosshair": false,
   "hideControls": false,
   "time": {
-    "from": "now-30d",
+    "from": "now-90d",
     "to": "now"
   },
   "timepicker": {
@@ -39,7 +39,7 @@
   "templating": {
     "list": [
       {
-        "allValue": null,
+        "allValue": "",
         "datasource": "graphite",
         "hide": 0,
         "includeAll": true,
@@ -48,111 +48,156 @@
         "name": "project",
         "options": [
           {
+            "selected": true,
             "text": "All",
-            "value": "$__all",
-            "selected": true
+            "value": "$__all"
           },
           {
+            "selected": false,
             "text": "akvopedia",
-            "value": "akvopedia",
-            "selected": false
+            "value": "akvopedia"
           },
           {
+            "selected": false,
+            "text": "ashoka-survey",
+            "value": "ashoka-survey"
+          },
+          {
+            "selected": false,
+            "text": "athena",
+            "value": "athena"
+          },
+          {
+            "selected": false,
             "text": "community",
-            "value": "community",
-            "selected": false
+            "value": "community"
           },
           {
+            "selected": false,
             "text": "delhi-schools",
-            "value": "delhi-schools",
-            "selected": false
+            "value": "delhi-schools"
           },
           {
+            "selected": false,
             "text": "design-practice",
-            "value": "design-practice",
-            "selected": false
+            "value": "design-practice"
           },
           {
+            "selected": false,
             "text": "devois",
-            "value": "devois",
-            "selected": false
+            "value": "devois"
           },
           {
+            "selected": false,
+            "text": "evaluation",
+            "value": "evaluation"
+          },
+          {
+            "selected": false,
             "text": "go-jek",
-            "value": "go-jek",
-            "selected": false
+            "value": "go-jek"
           },
           {
+            "selected": false,
+            "text": "grasshopper",
+            "value": "grasshopper"
+          },
+          {
+            "selected": false,
             "text": "insider",
-            "value": "insider",
-            "selected": false
+            "value": "insider"
           },
           {
+            "selected": false,
             "text": "irewardchart",
-            "value": "irewardchart",
-            "selected": false
+            "value": "irewardchart"
           },
           {
+            "selected": false,
             "text": "kulu",
-            "value": "kulu",
-            "selected": false
+            "value": "kulu"
           },
           {
+            "selected": false,
             "text": "learning",
-            "value": "learning",
-            "selected": false
+            "value": "learning"
           },
           {
+            "selected": false,
+            "text": "mightyhive",
+            "value": "mightyhive"
+          },
+          {
+            "selected": false,
             "text": "mindspark",
-            "value": "mindspark",
-            "selected": false
+            "value": "mindspark"
           },
           {
+            "selected": false,
+            "text": "neev-technologies---dmart",
+            "value": "neev-technologies---dmart"
+          },
+          {
+            "selected": false,
             "text": "operations",
-            "value": "operations",
-            "selected": false
+            "value": "operations"
           },
           {
+            "selected": false,
             "text": "pantheon",
-            "value": "pantheon",
-            "selected": false
+            "value": "pantheon"
           },
           {
+            "selected": false,
             "text": "perfect",
-            "value": "perfect",
-            "selected": false
+            "value": "perfect"
           },
           {
+            "selected": false,
             "text": "postgresql-consulting",
-            "value": "postgresql-consulting",
-            "selected": false
+            "value": "postgresql-consulting"
           },
           {
+            "selected": false,
             "text": "quintype",
-            "value": "quintype",
-            "selected": false
+            "value": "quintype"
           },
           {
+            "selected": false,
+            "text": "ripple",
+            "value": "ripple"
+          },
+          {
+            "selected": false,
             "text": "samanvay",
-            "value": "samanvay",
-            "selected": false
+            "value": "samanvay"
           },
           {
+            "selected": false,
+            "text": "school-scoop",
+            "value": "school-scoop"
+          },
+          {
+            "selected": false,
             "text": "social-recommendation-service",
-            "value": "social-recommendation-service",
-            "selected": false
+            "value": "social-recommendation-service"
+          },
+          {
+            "selected": false,
+            "text": "subcontracting",
+            "value": "subcontracting"
           }
         ],
         "query": "*",
         "refresh": 0,
-        "regex": "^(?:(?!carbon|collect|leaves).)*$",
+        "regex": "^(?:(?!carbon|collectd|leaves).)*$",
         "sort": 1,
         "tagValuesQuery": null,
         "tagsQuery": null,
         "type": "query"
       },
       {
-        "allValue": null,
+        "allValue": "",
         "datasource": "graphite",
         "hide": 0,
         "includeAll": true,
@@ -169,7 +214,7 @@
         "type": "query"
       },
       {
-        "allValue": null,
+        "allValue": "",
         "datasource": "graphite",
         "hide": 0,
         "includeAll": true,
@@ -192,7 +237,7 @@
   },
   "refresh": false,
   "schemaVersion": 13,
-  "version": 36,
+  "version": 15,
   "links": [],
   "gnetId": null,
   "rows": [
@@ -250,7 +295,7 @@
           "targets": [
             {
               "refId": "A",
-              "target": "$project.$task.$person",
+              "target": "aliasByNode(*.*.$person,0,1)",
               "textEditor": true
             },
             {
@@ -1156,7 +1201,7 @@
           "targets": [
             {
               "refId": "A",
-              "target": "leaves.*.$person",
+              "target": "aliasByNode(scale(leaves.*.$person, 0.125),1)",
               "textEditor": true
             }
           ],
