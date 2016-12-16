@@ -8,7 +8,7 @@
   "sharedCrosshair": false,
   "hideControls": false,
   "time": {
-    "from": "now-60d",
+    "from": "now-30d",
     "to": "now"
   },
   "timepicker": {
@@ -45,9 +45,122 @@
         "includeAll": true,
         "label": null,
         "multi": false,
-        "name": "person",
+        "name": "project",
+        "options": [
+          {
+            "text": "All",
+            "value": "$__all",
+            "selected": true
+          },
+          {
+            "text": "akvopedia",
+            "value": "akvopedia",
+            "selected": false
+          },
+          {
+            "text": "community",
+            "value": "community",
+            "selected": false
+          },
+          {
+            "text": "delhi-schools",
+            "value": "delhi-schools",
+            "selected": false
+          },
+          {
+            "text": "design-practice",
+            "value": "design-practice",
+            "selected": false
+          },
+          {
+            "text": "devois",
+            "value": "devois",
+            "selected": false
+          },
+          {
+            "text": "go-jek",
+            "value": "go-jek",
+            "selected": false
+          },
+          {
+            "text": "insider",
+            "value": "insider",
+            "selected": false
+          },
+          {
+            "text": "irewardchart",
+            "value": "irewardchart",
+            "selected": false
+          },
+          {
+            "text": "kulu",
+            "value": "kulu",
+            "selected": false
+          },
+          {
+            "text": "learning",
+            "value": "learning",
+            "selected": false
+          },
+          {
+            "text": "mindspark",
+            "value": "mindspark",
+            "selected": false
+          },
+          {
+            "text": "operations",
+            "value": "operations",
+            "selected": false
+          },
+          {
+            "text": "pantheon",
+            "value": "pantheon",
+            "selected": false
+          },
+          {
+            "text": "perfect",
+            "value": "perfect",
+            "selected": false
+          },
+          {
+            "text": "postgresql-consulting",
+            "value": "postgresql-consulting",
+            "selected": false
+          },
+          {
+            "text": "quintype",
+            "value": "quintype",
+            "selected": false
+          },
+          {
+            "text": "samanvay",
+            "value": "samanvay",
+            "selected": false
+          },
+          {
+            "text": "social-recommendation-service",
+            "value": "social-recommendation-service",
+            "selected": false
+          }
+        ],
+        "query": "*",
+        "refresh": 0,
+        "regex": "^(?:(?!carbon|collect|leaves).)*$",
+        "sort": 1,
+        "tagValuesQuery": null,
+        "tagsQuery": null,
+        "type": "query"
+      },
+      {
+        "allValue": null,
+        "datasource": "graphite",
+        "hide": 0,
+        "includeAll": true,
+        "label": null,
+        "multi": false,
+        "name": "task",
         "options": [],
-        "query": "*.*",
+        "query": "$project.*",
         "refresh": 1,
         "regex": "",
         "sort": 1,
@@ -62,167 +175,11 @@
         "includeAll": true,
         "label": null,
         "multi": false,
-        "name": "project",
-        "options": [
-          {
-            "selected": true,
-            "text": "All",
-            "value": "$__all"
-          },
-          {
-            "selected": false,
-            "text": "akvopedia",
-            "value": "akvopedia"
-          },
-          {
-            "selected": false,
-            "text": "ashoka-survey",
-            "value": "ashoka-survey"
-          },
-          {
-            "selected": false,
-            "text": "athena",
-            "value": "athena"
-          },
-          {
-            "selected": false,
-            "text": "carbon",
-            "value": "carbon"
-          },
-          {
-            "selected": false,
-            "text": "collectd",
-            "value": "collectd"
-          },
-          {
-            "selected": false,
-            "text": "community",
-            "value": "community"
-          },
-          {
-            "selected": false,
-            "text": "delhi-schools",
-            "value": "delhi-schools"
-          },
-          {
-            "selected": false,
-            "text": "design-practice",
-            "value": "design-practice"
-          },
-          {
-            "selected": false,
-            "text": "devois",
-            "value": "devois"
-          },
-          {
-            "selected": false,
-            "text": "evaluation",
-            "value": "evaluation"
-          },
-          {
-            "selected": false,
-            "text": "foo",
-            "value": "foo"
-          },
-          {
-            "selected": false,
-            "text": "go-jek",
-            "value": "go-jek"
-          },
-          {
-            "selected": false,
-            "text": "grasshopper",
-            "value": "grasshopper"
-          },
-          {
-            "selected": false,
-            "text": "insider",
-            "value": "insider"
-          },
-          {
-            "selected": false,
-            "text": "irewardchart",
-            "value": "irewardchart"
-          },
-          {
-            "selected": false,
-            "text": "kulu",
-            "value": "kulu"
-          },
-          {
-            "selected": false,
-            "text": "learning",
-            "value": "learning"
-          },
-          {
-            "selected": false,
-            "text": "mightyhive",
-            "value": "mightyhive"
-          },
-          {
-            "selected": false,
-            "text": "mindspark",
-            "value": "mindspark"
-          },
-          {
-            "selected": false,
-            "text": "neev-technologies---dmart",
-            "value": "neev-technologies---dmart"
-          },
-          {
-            "selected": false,
-            "text": "operations",
-            "value": "operations"
-          },
-          {
-            "selected": false,
-            "text": "pantheon",
-            "value": "pantheon"
-          },
-          {
-            "selected": false,
-            "text": "perfect",
-            "value": "perfect"
-          },
-          {
-            "selected": false,
-            "text": "postgresql-consulting",
-            "value": "postgresql-consulting"
-          },
-          {
-            "selected": false,
-            "text": "quintype",
-            "value": "quintype"
-          },
-          {
-            "selected": false,
-            "text": "ripple",
-            "value": "ripple"
-          },
-          {
-            "selected": false,
-            "text": "samanvay",
-            "value": "samanvay"
-          },
-          {
-            "selected": false,
-            "text": "school-scoop",
-            "value": "school-scoop"
-          },
-          {
-            "selected": false,
-            "text": "social-recommendation-service",
-            "value": "social-recommendation-service"
-          },
-          {
-            "selected": false,
-            "text": "subcontracting",
-            "value": "subcontracting"
-          }
-        ],
-        "query": "*",
-        "refresh": 0,
-        "regex": "^(?:(?!leaves).)*$",
+        "name": "person",
+        "options": [],
+        "query": "$project.$task.*",
+        "refresh": 1,
+        "regex": "",
         "sort": 1,
         "tagValuesQuery": null,
         "tagsQuery": null,
@@ -235,7 +192,7 @@
   },
   "refresh": false,
   "schemaVersion": 13,
-  "version": 26,
+  "version": 36,
   "links": [],
   "gnetId": null,
   "rows": [
@@ -281,6 +238,10 @@
             {
               "alias": "/leaves*/",
               "color": "#DEDAF7"
+            },
+            {
+              "alias": "/weekend*/",
+              "color": "#052B51"
             }
           ],
           "span": 12,
@@ -289,8 +250,12 @@
           "targets": [
             {
               "refId": "A",
-              "target": "$project.$person",
+              "target": "$project.$task.$person",
               "textEditor": true
+            },
+            {
+              "refId": "B",
+              "target": "weekend"
             }
           ],
           "thresholds": [],
@@ -403,8 +368,8 @@
           "targets": [
             {
               "refId": "A",
-              "target": "sumSeries($project.$person)",
-              "textEditor": false
+              "target": "sumSeries($project.$task.$person)",
+              "textEditor": true
             }
           ],
           "thresholds": "",
@@ -481,8 +446,8 @@
           "targets": [
             {
               "refId": "A",
-              "target": "sumSeries($project.$person)",
-              "textEditor": false
+              "target": "sumSeries($project.$task.$person)",
+              "textEditor": true
             }
           ],
           "thresholds": "",
@@ -559,8 +524,8 @@
           "targets": [
             {
               "refId": "A",
-              "target": "sumSeries($project.$person)",
-              "textEditor": false
+              "target": "sumSeries($project.$task.$person)",
+              "textEditor": true
             }
           ],
           "thresholds": "",
@@ -637,8 +602,8 @@
           "targets": [
             {
               "refId": "A",
-              "target": "sumSeries($project.$person)",
-              "textEditor": false
+              "target": "sumSeries($project.$task.$person)",
+              "textEditor": true
             }
           ],
           "thresholds": "",
@@ -715,8 +680,8 @@
           "targets": [
             {
               "refId": "A",
-              "target": "sumSeries($project.$person)",
-              "textEditor": false
+              "target": "sumSeries($project.$task.$person)",
+              "textEditor": true
             }
           ],
           "thresholds": "",
@@ -806,7 +771,7 @@
           "targets": [
             {
               "refId": "A",
-              "target": "scale(sumSeries(leaves.$person), 0.125)",
+              "target": "scale(sumSeries(leaves.*.$person), 0.125)",
               "textEditor": true
             }
           ],
@@ -884,7 +849,7 @@
           "targets": [
             {
               "refId": "A",
-              "target": "scale(sumSeries(leaves.$person),0.125)",
+              "target": "scale(sumSeries(leaves.*.$person), 0.125)",
               "textEditor": true
             }
           ],
@@ -962,7 +927,7 @@
           "targets": [
             {
               "refId": "A",
-              "target": "scale(sumSeries(leaves.$person),0.125)",
+              "target": "scale(sumSeries(leaves.*.$person), 0.125)",
               "textEditor": true
             }
           ],
@@ -1040,7 +1005,7 @@
           "targets": [
             {
               "refId": "A",
-              "target": "scale(sumSeries(leaves.$person),0.125)",
+              "target": "scale(sumSeries(leaves.*.$person), 0.125)",
               "textEditor": true
             }
           ],
@@ -1113,12 +1078,12 @@
             "fillColor": "rgba(31, 118, 189, 0.18)",
             "full": true,
             "lineColor": "rgb(31, 120, 193)",
-            "show": true
+            "show": false
           },
           "targets": [
             {
               "refId": "A",
-              "target": "scale(sumSeries(leaves.$person), 0.125)",
+              "target": "scale(sumSeries(leaves.*.$person), 0.125)",
               "textEditor": true
             }
           ],
@@ -1140,7 +1105,7 @@
       ],
       "showTitle": true,
       "titleSize": "h6",
-      "height": 26,
+      "height": 48,
       "repeat": null,
       "repeatRowId": null,
       "repeatIteration": null,
@@ -1182,8 +1147,7 @@
           "renderer": "flot",
           "seriesOverrides": [
             {
-              "alias": "/leaves*/",
-              "color": "#DEDAF7"
+              "alias": "/leaves*/"
             }
           ],
           "span": 12,
@@ -1192,7 +1156,7 @@
           "targets": [
             {
               "refId": "A",
-              "target": "leaves.$person",
+              "target": "leaves.*.$person",
               "textEditor": true
             }
           ],
@@ -1237,7 +1201,7 @@
       ],
       "showTitle": false,
       "titleSize": "h6",
-      "height": 102,
+      "height": 155,
       "repeat": null,
       "repeatRowId": null,
       "repeatIteration": null,
